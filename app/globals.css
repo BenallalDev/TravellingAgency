@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 .nav-link::after {
   content: '';
   display: block;
@@ -32,7 +32,16 @@
 .scrolling-nav a {
   color: #303030;
 }
+.scrolling-nav path {
+  fill: #303030;
+}
+.scrolling-nav .hamburger-react div {
+  background-color: #303030;
+}
 
+.__className_29881b {
+  font-family: 'Playfair Display' ;
+}
 ::-webkit-scrollbar {
   width: 0px;
   display: none;

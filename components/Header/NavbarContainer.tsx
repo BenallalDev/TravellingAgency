@@ -36,8 +36,8 @@ export default function NavbarContainer({
             <Link href="/" className={`flex flex-col justify-center absolute  h-full py-1 px-2 mb-3 scale-75 lg:hidden`}>
                 <Logo />
             </Link>
-            <div className="absolute right-4 top-5 lg:hidden">
-                <Hamburger toggled={open} toggle={setOpen} color={open ? "black" : "white"} />
+            <div className="absolute right-4 top-4 lg:hidden">
+                <Hamburger toggled={open} toggle={setOpen} color={open || bg ? "#303030" : "white"} />
             </div>
             {children}
             <MobileNav open={open} />
